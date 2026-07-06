@@ -1,0 +1,254 @@
+/* ===================================================================
+   Daria Úklid — stylesheet
+   Design concept: "Light through a clean window"
+   Palette: warm paper, deep forest green, soft sage, dusty gold accent
+   Type: Fraunces (display, characterful serif) + Karla (body, humanist sans)
+=================================================================== */
+
+:root{
+  --paper: #F1EFE6;
+  --paper-deep: #E8E4D6;
+  --forest: #3E4A34;
+  --forest-deep: #2B3324;
+  --sage: #6F7F5C;
+  --sage-pale: #DCE3D1;
+  --gold: #B8923F;
+  --gold-soft: #E7D6A8;
+  --ink: #24261F;
+  --white: #FFFFFF;
+  --line: rgba(36,38,31,0.12);
+
+  --display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --body: "Karla", "Segoe UI", sans-serif;
+  --mono: "Space Mono", monospace;
+
+  --radius: 4px;
+  --container: 1120px;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;}
+.container{max-width:var(--container);margin:0 auto;padding:0 28px;}
+
+h1,h2,h3,h4{
+  font-family:var(--display);
+  font-weight:600;
+  color:var(--forest-deep);
+  line-height:1.12;
+  margin:0 0 .5em;
+}
+h1{font-size:clamp(2.4rem,5vw,3.6rem); font-weight:500; letter-spacing:-0.01em;}
+h2{font-size:clamp(1.7rem,3vw,2.3rem);}
+h3{font-size:1.25rem;}
+p{margin:0 0 1em;}
+.lede{font-size:1.15rem;color:var(--ink);opacity:.85;max-width:56ch;}
+
+.eyebrow{
+  font-family:var(--mono);
+  font-size:.72rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--sage);
+  display:inline-block;
+  margin-bottom:.9em;
+}
+
+/* ---------- Header / Nav ---------- */
+header.site{
+  position:sticky; top:0; z-index:50;
+  background:rgba(241,239,230,0.92);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+}
+.nav-wrap{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:16px 28px; max-width:var(--container); margin:0 auto;
+}
+.brand{
+  display:flex; align-items:center; gap:10px;
+  font-family:var(--display); font-size:1.35rem; font-weight:600;
+  color:var(--forest-deep); text-decoration:none;
+}
+.brand svg{width:30px;height:30px;}
+nav.primary{display:flex; align-items:center; gap:28px;}
+nav.primary a{
+  text-decoration:none; font-size:.95rem; color:var(--ink);
+  padding:6px 0; border-bottom:2px solid transparent;
+  transition:border-color .15s ease, color .15s ease;
+}
+nav.primary a:hover, nav.primary a.active{border-color:var(--gold); color:var(--forest-deep);}
+.nav-cta{
+  background:var(--forest); color:var(--white)!important; padding:10px 20px!important;
+  border-radius:var(--radius); border-bottom:none!important;
+}
+.nav-cta:hover{background:var(--forest-deep); border-color:transparent!important;}
+.lang-switch{display:flex; gap:6px; margin-left:8px;}
+.lang-switch a{
+  font-family:var(--mono); font-size:.72rem; text-decoration:none;
+  padding:4px 7px; border:1px solid var(--line); border-radius:3px; color:var(--ink);
+}
+.lang-switch a.current{background:var(--forest); color:var(--white); border-color:var(--forest);}
+.mobile-toggle{display:none;}
+
+@media (max-width:860px){
+  nav.primary{
+    position:fixed; inset:64px 0 0 0; background:var(--paper);
+    flex-direction:column; align-items:flex-start; padding:28px;
+    transform:translateX(100%); transition:transform .25s ease; gap:22px;
+  }
+  nav.primary.open{transform:translateX(0);}
+  .mobile-toggle{
+    display:block; background:none; border:none; cursor:pointer;
+    width:30px; height:22px; position:relative;
+  }
+  .mobile-toggle span, .mobile-toggle::before, .mobile-toggle::after{
+    content:""; position:absolute; left:0; right:0; height:2px; background:var(--ink);
+  }
+  .mobile-toggle::before{top:0;} .mobile-toggle span{top:10px; position:absolute; left:0; right:0; height:2px; background:var(--ink);} .mobile-toggle::after{bottom:0;}
+}
+
+/* ---------- Hero ---------- */
+.hero{
+  padding:76px 0 60px;
+  display:grid; grid-template-columns:1.1fr .9fr; gap:48px; align-items:center;
+}
+.hero .trust-row{
+  display:flex; flex-wrap:wrap; gap:10px; margin-top:26px;
+}
+.pill{
+  font-size:.82rem; background:var(--sage-pale); color:var(--forest-deep);
+  padding:7px 14px; border-radius:999px; font-family:var(--body); font-weight:600;
+}
+.hero-actions{display:flex; gap:14px; margin-top:30px; flex-wrap:wrap;}
+.btn{
+  display:inline-block; text-decoration:none; font-weight:700; font-size:.95rem;
+  padding:14px 26px; border-radius:var(--radius); transition:transform .15s ease, background .15s ease;
+}
+.btn-primary{background:var(--gold); color:var(--forest-deep);}
+.btn-primary:hover{background:#a67f34; transform:translateY(-1px);}
+.btn-outline{border:1.5px solid var(--forest); color:var(--forest-deep);}
+.btn-outline:hover{background:var(--forest); color:var(--white);}
+
+.window-art{width:100%; height:auto;}
+
+/* wipe divider — signature motif */
+.wipe-divider{width:100%; height:34px; margin:0 0;}
+.wipe-divider path{fill:none; stroke:var(--sage); stroke-width:2; opacity:.55;}
+
+section{padding:64px 0;}
+section.tight{padding:44px 0;}
+.section-alt{background:var(--paper-deep);}
+.section-forest{background:var(--forest); color:var(--paper);}
+.section-forest h2, .section-forest h3{color:var(--white);}
+.section-forest .eyebrow{color:var(--gold-soft);}
+
+/* ---------- Cards / Grid ---------- */
+.grid{display:grid; gap:26px;}
+.grid-3{grid-template-columns:repeat(3,1fr);}
+.grid-2{grid-template-columns:repeat(2,1fr);}
+@media (max-width:860px){.grid-3,.grid-2{grid-template-columns:1fr;}}
+
+.card{
+  background:var(--white); border:1px solid var(--line); border-radius:var(--radius);
+  padding:30px; transition:transform .15s ease, box-shadow .15s ease;
+}
+.card:hover{transform:translateY(-3px); box-shadow:0 12px 28px rgba(43,51,36,0.08);}
+.card .icon{width:40px;height:40px; margin-bottom:16px; color:var(--sage);}
+
+.numbered-step{display:flex; gap:18px; align-items:flex-start; margin-bottom:26px;}
+.numbered-step .num{
+  font-family:var(--display); font-size:1.6rem; color:var(--gold); flex:none; width:44px;
+}
+
+.photo-frame{
+  border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;
+  background:var(--sage-pale); aspect-ratio:4/3; display:flex; align-items:center; justify-content:center;
+  position:relative;
+}
+.photo-frame .placeholder-note{
+  position:absolute; bottom:10px; left:10px; right:10px;
+  font-family:var(--mono); font-size:.68rem; color:var(--forest-deep);
+  background:rgba(255,255,255,0.85); padding:6px 9px; border-radius:3px; line-height:1.4;
+}
+
+/* ---------- Testimonials ---------- */
+.quote-card{
+  background:var(--white); border-left:3px solid var(--gold); padding:24px 26px; border-radius:0 var(--radius) var(--radius) 0;
+}
+.quote-card p{font-style:italic; margin-bottom:10px;}
+.quote-card .who{font-family:var(--mono); font-size:.78rem; color:var(--sage); font-style:normal;}
+
+/* ---------- Pricing ---------- */
+table.pricing{width:100%; border-collapse:collapse; background:var(--white); border-radius:var(--radius); overflow:hidden;}
+table.pricing th, table.pricing td{
+  text-align:left; padding:16px 18px; border-bottom:1px solid var(--line);
+}
+table.pricing thead th{background:var(--forest); color:var(--white); font-family:var(--body); font-weight:700; font-size:.9rem;}
+table.pricing tr:last-child td{border-bottom:none;}
+.price-note{font-size:.88rem; opacity:.75; margin-top:14px;}
+
+/* ---------- Forms ---------- */
+form.contact-form{display:grid; gap:16px; max-width:560px;}
+form.contact-form label{font-weight:700; font-size:.9rem; display:block; margin-bottom:6px;}
+form.contact-form input, form.contact-form select, form.contact-form textarea{
+  width:100%; padding:12px 14px; border:1.5px solid var(--line); border-radius:var(--radius);
+  font-family:var(--body); font-size:1rem; background:var(--white);
+}
+form.contact-form input:focus, form.contact-form select:focus, form.contact-form textarea:focus{
+  outline:3px solid var(--gold-soft); border-color:var(--gold);
+}
+form.contact-form button{
+  justify-self:start; border:none; cursor:pointer; font-family:var(--body);
+}
+.form-note{font-size:.85rem; opacity:.7;}
+
+/* ---------- FAQ ---------- */
+details.faq{
+  background:var(--white); border:1px solid var(--line); border-radius:var(--radius);
+  padding:18px 20px; margin-bottom:12px;
+}
+details.faq summary{font-weight:700; cursor:pointer; font-family:var(--body); list-style:none;}
+details.faq summary::-webkit-details-marker{display:none;}
+details.faq summary::before{content:"+ "; color:var(--gold); font-weight:900;}
+details.faq[open] summary::before{content:"– ";}
+details.faq p{margin-top:12px;}
+
+/* ---------- Service area list ---------- */
+.area-list{display:flex; flex-wrap:wrap; gap:10px; padding:0; list-style:none; margin:20px 0 0;}
+.area-list li{
+  background:var(--white); border:1px solid var(--line); padding:8px 14px; border-radius:999px; font-size:.9rem;
+}
+
+/* ---------- Footer ---------- */
+footer.site{background:var(--forest-deep); color:var(--paper); padding:52px 0 26px; margin-top:20px;}
+footer.site a{color:var(--gold-soft); text-decoration:none;}
+footer.site a:hover{text-decoration:underline;}
+.footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:36px; margin-bottom:34px;}
+@media (max-width:860px){.footer-grid{grid-template-columns:1fr;}}
+.footer-grid h4{color:var(--white); font-size:1rem; margin-bottom:14px;}
+.footer-grid ul{list-style:none; padding:0; margin:0; display:grid; gap:8px; font-size:.92rem;}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,0.12); padding-top:20px;
+  display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+  font-size:.82rem; opacity:.75;
+}
+.tiktok-badge{
+  display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.08);
+  padding:9px 16px; border-radius:999px; font-size:.88rem; margin-top:6px;
+}
+
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr; padding:48px 0 36px;}
+  .hero .window-art{order:-1; max-width:280px; margin:0 auto;}
+}

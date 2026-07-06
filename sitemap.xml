@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://ukliddaria.cz/cs/index.html</loc>
+      <xhtml:link rel="alternate" hreflang="cs" href="https://ukliddaria.cz/cs/index.html" />
+      <xhtml:link rel="alternate" hreflang="uk" href="https://ukliddaria.cz/uk/index.html" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://ukliddaria.cz/en/index.html" />
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ukliddaria.cz/cs/sluzby.html</loc>
+      <xhtml:link rel="alternate" hreflang="cs" href="https://ukliddaria.cz/cs/sluzby.html" />
+      <xhtml:link rel="alternate" hreflang="uk" href="https://ukliddaria.cz/uk/poslugy.html" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://ukliddaria.cz/en/services.html" />
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ukliddaria.cz/cs/o-mne.html</loc>
+      <xhtml:link rel="alternate" hreflang="cs" href="https://ukliddaria.cz/cs/o-mne.html" />
+      <xhtml:link rel="alternate" hreflang="uk" href="https://ukliddaria.cz/uk/pro-mene.html" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://ukliddaria.cz/en/about.html" />
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ukliddaria.cz/cs/cenik.html</loc>
+      <xhtml:link rel="alternate" hreflang="cs" href="https://ukliddaria.cz/cs/cenik.html" />
+      <xhtml:link rel="alternate" hreflang="uk" href="https://ukliddaria.cz/uk/ciny.html" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://ukliddaria.cz/en/pricing.html" />
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ukliddaria.cz/cs/kontakt.html</loc>
+      <xhtml:link rel="alternate" hreflang="cs" href="https://ukliddaria.cz/cs/kontakt.html" />
+      <xhtml:link rel="alternate" hreflang="uk" href="https://ukliddaria.cz/uk/kontakty.html" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://ukliddaria.cz/en/contact.html" />
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ukliddaria.cz/uk/index.html</loc>
+      <xhtml:link rel="alternate" hreflang="cs" href="https://ukliddaria.cz/cs/index.html" />
+      <xhtml:link rel="alternate" hreflang="uk" href="https://ukliddaria.cz/uk/index.html" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://ukliddaria.cz/en/index.html" />
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ukliddaria.cz/uk/poslugy.html</loc>
+      <xhtml:link rel="alternate" hreflang="cs" href="https://ukliddaria.cz/cs/sluzby.html" />
+      <xhtml:link rel="alternate" hreflang="uk" href="https://ukliddaria.cz/uk/poslugy.html" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://ukliddaria.cz/en/services.html" />
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ukliddaria.cz/uk/pro-mene.html</loc>
+      <xhtml:link rel="alternate" hreflang="cs" href="https://ukliddaria.cz/cs/o-mne.html" />
+      <xhtml:link rel="alternate" hreflang="uk" href="https://ukliddaria.cz/uk/pro-mene.html" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://ukliddaria.cz/en/about.html" />
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ukliddaria.cz/uk/ciny.html</loc>
+      <xhtml:link rel="alternate" hreflang="cs" href="https://ukliddaria.cz/cs/cenik.html" />
+      <xhtml:link rel="alternate" hreflang="uk" href="https://ukliddaria.cz/uk/ciny.html" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://ukliddaria.cz/en/pricing.html" />
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ukliddaria.cz/uk/kontakty.html</loc>
+      <xhtml:link rel="alternate" hreflang="cs" href="https://ukliddaria.cz/cs/kontakt.html" />
+      <xhtml:link rel="alternate" hreflang="uk" href="https://ukliddaria.cz/uk/kontakty.html" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://ukliddaria.cz/en/contact.html" />
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ukliddaria.cz/en/index.html</loc>
+      <xhtml:link rel="alternate" hreflang="cs" href="https://ukliddaria.cz/cs/index.html" />
+      <xhtml:link rel="alternate" hreflang="uk" href="https://ukliddaria.cz/uk/index.html" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://ukliddaria.cz/en/index.html" />
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ukliddaria.cz/en/services.html</loc>
+      <xhtml:link rel="alternate" hreflang="cs" href="https://ukliddaria.cz/cs/sluzby.html" />
+      <xhtml:link rel="alternate" hreflang="uk" href="https://ukliddaria.cz/uk/poslugy.html" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://ukliddaria.cz/en/services.html" />
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ukliddaria.cz/en/about.html</loc>
+      <xhtml:link rel="alternate" hreflang="cs" href="https://ukliddaria.cz/cs/o-mne.html" />
+      <xhtml:link rel="alternate" hreflang="uk" href="https://ukliddaria.cz/uk/pro-mene.html" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://ukliddaria.cz/en/about.html" />
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ukliddaria.cz/en/pricing.html</loc>
+      <xhtml:link rel="alternate" hreflang="cs" href="https://ukliddaria.cz/cs/cenik.html" />
+      <xhtml:link rel="alternate" hreflang="uk" href="https://ukliddaria.cz/uk/ciny.html" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://ukliddaria.cz/en/pricing.html" />
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://ukliddaria.cz/en/contact.html</loc>
+      <xhtml:link rel="alternate" hreflang="cs" href="https://ukliddaria.cz/cs/kontakt.html" />
+      <xhtml:link rel="alternate" hreflang="uk" href="https://ukliddaria.cz/uk/kontakty.html" />
+      <xhtml:link rel="alternate" hreflang="en" href="https://ukliddaria.cz/en/contact.html" />
+    <changefreq>monthly</changefreq>
+  </url>
+</urlset>

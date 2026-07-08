@@ -51,8 +51,8 @@ h1,h2,h3,h4{
 h1{font-size:clamp(2.4rem,5vw,3.6rem); font-weight:500; letter-spacing:-0.01em;}
 h2{font-size:clamp(1.7rem,3vw,2.3rem);}
 h3{font-size:1.25rem;}
-p{margin:0 0 1em;}
-.lede{font-size:1.15rem;color:var(--ink);opacity:.85;max-width:56ch;}
+p{margin:0 0 1em; font-weight:500;}
+.lede{font-size:1.15rem;color:var(--ink);font-weight:500;max-width:56ch;}
 
 .eyebrow{
   font-family:var(--mono);
@@ -150,8 +150,9 @@ section{padding:64px 0;}
 section.tight{padding:44px 0;}
 .section-alt{background:var(--paper-deep);}
 .section-forest{background:var(--forest); color:var(--paper);}
-.section-forest h2, .section-forest h3{color:var(--white);}
-.section-forest .eyebrow{color:var(--gold-soft);}
+.section-forest h2, .section-forest h3{color:var(--white); text-shadow:0 1px 2px rgba(0,0,0,0.25);}
+.section-forest p{color:var(--paper); font-weight:600; text-shadow:0 1px 2px rgba(0,0,0,0.25);}
+.section-forest .eyebrow{color:var(--gold-soft); font-weight:700;}
 
 /* ---------- Cards / Grid ---------- */
 .grid{display:grid; gap:26px;}
@@ -231,7 +232,8 @@ details.faq p{margin-top:12px;}
 /* ---------- Service area list ---------- */
 .area-list{display:flex; flex-wrap:wrap; gap:10px; padding:0; list-style:none; margin:20px 0 0;}
 .area-list li{
-  background:var(--white); border:1px solid var(--line); padding:8px 14px; border-radius:999px; font-size:.9rem;
+  background:var(--white); border:1px solid var(--line); padding:8px 14px; border-radius:999px;
+  font-size:.9rem; font-weight:700; color:var(--forest-deep);
 }
 
 /* ---------- Footer ---------- */
